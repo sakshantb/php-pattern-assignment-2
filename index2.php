@@ -1,23 +1,16 @@
 <?php
-     for($i=1;$i<=5;$i++){
-         for($j=1;$j<=5;$j++){
-             if($j==1 || $j==5){
-                 echo "*";
 
-             }
-             else{
-                 if($i==1 || $i==5){
-                     echo "*";
-                 }
-                 else{
-                     echo "&nbsp;&nbsp;";
-                }
-        }
-           
+for($i=1;$i<=6;$i++){
+    for($k=6;$k>$i;$k--){
+        echo "&nbsp;&nbsp;";
+    }
+    for($x=0;$x<$i;$x++){
+        echo "*","&nbsp;&nbsp;";
 
     }
-         echo "<br>";
+        echo "<br><br>";
 }
+?>
     
 
      
